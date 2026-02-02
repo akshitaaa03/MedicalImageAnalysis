@@ -11,7 +11,7 @@ def get_transforms():
         RandCropByPosNegLabeld(
             keys=["image", "label"],
             label_key="label",
-            spatial_size=(96, 96, 96),
+            spatial_size=(64,64,64),
             pos=1, neg=1, num_samples=2
         ),
         ToTensord(keys=["image", "label"])
