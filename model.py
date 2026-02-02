@@ -9,3 +9,5 @@ def get_model():
         strides=(2, 2, 2, 2),
         num_res_units=2
     )
+import os
+print(os.listdir("data"))
